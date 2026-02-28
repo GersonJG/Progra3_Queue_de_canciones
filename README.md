@@ -29,6 +29,11 @@ En el cual se encuentran:
 -umg.edu.gt.Queuehandler.model
 -- Song.Java (Donde se encuentra la estructura las Colas para crear las canciones, con moficaciones en el toString, el constructor de las canciones y los elementos de las canciones
 
+## Decisiones tecnicas
+Una de las decisiones tecnicas que me gustaria mencionar porque NO LA CONOCIA es la implementacion de varibles de tipo genérico que pueden tomar cualquier valor asignado en su utlizacion. Especialmente util cuando el valor que tendrán debe mutar por requerimientos del programa como en este caso pasando de String a int pero que puede utilizarse para mucho más.
+
+También me parece importante mencionar que debido a esto tuve que modificar el programa de Data_Structure_queue para poder implementar la libreria en el handler.
+
 ## Prioridad:
 La implementacion de la prioridad la hice a través de dos colas las cuáles agregan las canciones a su cola dependiendo del grado de prioridad. Si era Alto = 1 o si era Normal = 2. Luego se reproducia primero todos los elementos almacenados en la cola de prioridad alta y luego la de prioridad normal. Todo esto a través de metodos como  condicionales, validaciones con isEmpty() y toma de excepciones cuando alguna de las colas está vacia, etc.
 Luego el reproductor funciona correctamente siguiendo el orden estipulado por las prioridades como se puede ver en el ejemplo de la ejecucion.
